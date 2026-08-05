@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex SQL Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pokedex">
+    <div class="lights">
+      <div class="big-light"></div>
+      <div class="small-light red"></div>
+      <div class="small-light yellow"></div>
+      <div class="small-light green"></div>
+    </div>
+
+    <div class="screen-frame">
+      <div id="screen" class="screen">carregando partida...</div>
+    </div>
+
+    <div class="score-row">
+      <span>pontos restantes</span>
+      <span id="score">--</span>
+    </div>
+
+    <div class="controls">
+      <textarea id="sql-input" rows="3" placeholder="SELECT height FROM mystery_pokemon;"></textarea>
+      <button id="run-btn">executar query</button>
+
+      <div class="guess-row">
+        <input id="guess-input" type="text" placeholder="nome do pokémon">
+        <button id="guess-btn">arriscar palpite</button>
+      </div>
+
+      <button id="new-game-btn" class="secondary">jogar de novo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
